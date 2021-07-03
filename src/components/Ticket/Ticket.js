@@ -22,14 +22,19 @@ const Body = styled.p
 width: 100%
 `
 
-const Ticket = ({ Tickets }) => {
-    <Ticket>
+const Ticket = ({ ticket }) => {
+    return ( 
+    <TicketWrapper>
         <Title>
             {ticket.title}
         </Title>
         <Body>
             {ticket.body}
         </Body>
-    </Ticket>
+    </TicketWrapper>
+    )
 }
-}
+
+
+
+export default  Ticket
